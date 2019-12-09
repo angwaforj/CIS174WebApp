@@ -1,0 +1,26 @@
+﻿@model CIS174WebApp.ViewModel.UpdateAuthorCommand
+
+@{
+    ViewData["Title"] = "Edit Author";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<form asp-controller="Author" asp-action="Edit" method="post" class="form-horizontal">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+
+    <div class="form-group">
+        <partial name="_EditPartial" />
+        <div class="col-md-offset-2 col-md-10">
+            <input type="hidden" asp-for="AuthorId" />
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

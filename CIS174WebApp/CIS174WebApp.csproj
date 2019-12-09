@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <ApplicationIcon />
+    <Win32Resource />
+    <UserSecretsId>728eec06-dace-4968-874e-3a32ffb2d4c7</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.0.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
+  </ItemGroup>
+
+</Project>
